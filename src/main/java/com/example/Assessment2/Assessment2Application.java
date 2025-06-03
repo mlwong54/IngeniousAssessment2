@@ -27,7 +27,7 @@ public class Assessment2Application {
         return TriggerBuilder.newTrigger()
                 .forJob(dailyJobDetail())
                 .withIdentity("dailyJobTrigger")
-                .withSchedule(CronScheduleBuilder.cronSchedule("0 10 10 * * ?")) // 12:00 AM daily
+                .withSchedule(CronScheduleBuilder.cronSchedule("0 0 0 * * ?")) // 12:00 AM daily
                 .build();
     }
 

@@ -23,7 +23,7 @@ public class StockService {
     public void stockInsertDaily(){
         Document doc = null;
         try {
-            doc = Jsoup.connect("https://klse.i3investor.com/index.jsp").get();
+            doc = Jsoup.connect("https://klse.i3investor.com/web/index").get();
         } catch (
                 IOException e) {
             throw new RuntimeException(e);
